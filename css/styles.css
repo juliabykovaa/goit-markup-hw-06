@@ -309,6 +309,10 @@ textarea {
 
 }
 
+.policy-link:focus {
+    outline: none;
+}
+
 .check-wrapper {
     display: inline-block;
     cursor: pointer;
@@ -320,7 +324,7 @@ textarea {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
  
 }
      
@@ -388,9 +392,12 @@ textarea {
 
 .close-button:hover svg,
 .close-button:focus svg {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
 }
 
+.close-button:focus {
+    outline: none;
+}
 .send-button {
     margin-left: auto;
     margin-right: auto;
@@ -414,6 +421,7 @@ textarea {
 .send-button:hover,
 .send-button:focus {
     background-color: var(--accent-color-active);
+    outline: none;
 }
 
 .modal-title {
